@@ -30,18 +30,29 @@ pip install scapy gps python-gps
 **GPS SETUP**
 
 F-Droid GPS Forwarder app for android:
+
 https://f-droid.org/F-Droid.apk
+
 input raspi IP and desired port
 
+
 sudo systemctl stop gpsd
+
 sudo systemctl stop gpsd.socket
+
 gpsd -N udp://ur ip:port
+
 
 **TO MAKE PERMANENT**
 
 sudo nano /etc/default/gpsd
+
 comment out the DEVICES line and add:
+
 DEVICES="udp://ip:port"
+
 sudo systemctl start gpsd
+
 sudo systemctl start gpsd.socket
+
 
