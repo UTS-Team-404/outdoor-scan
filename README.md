@@ -19,6 +19,7 @@ srcPort,dstPort,sniffType
 **DEPENDANCIES:**
 
 sudo apt update
+
 sudo apt install -y aircrack-ng gpsd gpsd-clients python3-gps python3-scapy
 
 (if pip)
