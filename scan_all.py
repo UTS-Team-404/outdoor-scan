@@ -52,7 +52,7 @@ def airodump_scan_8s(iface, band="bg", secs=8):
         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, preexec_fn=os.setsid
     )
     try:
-        print(f"[*] Scanning {iface} for {secs}s with airodump-ng…", end="", flush=True)
+        print(f"[*] Scanning {iface} for {secs}s with airodump-ng", end="", flush=True)
         for _ in range(secs):
             print(".", end="", flush=True)
             time.sleep(1)
@@ -364,3 +364,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
