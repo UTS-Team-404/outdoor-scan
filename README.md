@@ -1,6 +1,8 @@
 # scan_all
 Pythin script for indoor/outdoor scanning.
 
+SQL VERSION
+
 **Usage:**
 
 sudo python3 scan_all.py
